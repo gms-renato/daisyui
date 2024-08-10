@@ -124,14 +124,6 @@ export let removeScrollPaddingFromNavbar
           </a>
         </div>
 
-        <div class="hidden flex-none items-center lg:block">
-          <a
-            data-sveltekit-preload-data
-            href="/store/"
-            class="btn btn-ghost drawer-button font-normal">
-            {$t("Store")}
-          </a>
-        </div>
       {/if}
       {#await import("./ThemeChange.svelte")}
         <div class="btn btn-ghost cursor-wait">
