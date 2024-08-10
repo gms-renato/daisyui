@@ -1,13 +1,13 @@
 {
     "name": "@renato92/daisyui",
-    "version": "4.13.0",
+    "version": "4.13.1",
     "description": "daisyUI - Tailwind CSS Components",
     "author": "GMS Church",
     "license": "MIT",
     "homepage": "https://daisyui.com",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/saadeghi/daisyui.git"
+        "url": "git+https://github.com/gms-renato/daisyui.git"
     },
     "funding": {
         "type": "opencollective",
@@ -52,7 +52,7 @@
     "publishConfig": {
         "access": "public",
         "branches": [
-            "master"
+            "gms"
         ]
     },
     "scripts": {
@@ -64,6 +64,7 @@
         "dev": "cd src/docs && npm run dev",
         "playground": "cd src/experiments/playground && npm run dev",
         "release": "node src/release",
+        "publish": "npm publish --access public",
         "publish:alpha": "npm publish --tag=alpha",
         "alpha": "npm run release -- --alpha && npm publish --tag=alpha"
     },
