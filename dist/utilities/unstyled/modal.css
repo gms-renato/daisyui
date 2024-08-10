@@ -1,0 +1,9 @@
+.modal-top {
+    place-items: start
+}
+.modal-middle {
+    place-items: center
+}
+.modal-bottom {
+    place-items: end
+}

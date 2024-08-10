@@ -1,0 +1,84 @@
+.range {
+  appearance: none;
+  -webkit-appearance: none;
+  --range-shdw: var(--fallback-bc,oklch(var(--bc)/1));
+  overflow: hidden;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+  .range:focus-visible::-webkit-slider-thumb {
+    --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem var(--range-shdw) inset;
+  }
+  .range:focus-visible::-moz-range-thumb {
+    --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem var(--range-shdw) inset;
+  }
+  .range::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+}
+  .range::-moz-range-track {
+  height: 0.5rem;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+}
+  .range::-webkit-slider-thumb {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+    appearance: none;
+    -webkit-appearance: none;
+    top: 50%;
+    color: var(--range-shdw);
+    transform: translateY(-50%);
+    --filler-size: 100rem;
+    --filler-offset: 0.6rem;
+    box-shadow:
+      0 0 0 3px var(--range-shdw) inset,
+      var(--focus-shadow, 0 0),
+      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}
+  .range::-moz-range-thumb {
+  position: relative;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+    top: 50%;
+    color: var(--range-shdw);
+    --filler-size: 100rem;
+    --filler-offset: 0.5rem;
+    box-shadow:
+      0 0 0 3px var(--range-shdw) inset,
+      var(--focus-shadow, 0 0),
+      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}
+  .range-primary {
+    --range-shdw: var(--fallback-p,oklch(var(--p)/1));
+  }
+  .range-secondary {
+    --range-shdw: var(--fallback-s,oklch(var(--s)/1));
+  }
+  .range-accent {
+    --range-shdw: var(--fallback-a,oklch(var(--a)/1));
+  }
+  .range-success {
+    --range-shdw: var(--fallback-su,oklch(var(--su)/1));
+  }
+  .range-warning {
+    --range-shdw: var(--fallback-wa,oklch(var(--wa)/1));
+  }
+  .range-info {
+    --range-shdw: var(--fallback-in,oklch(var(--in)/1));
+  }
+  .range-error {
+    --range-shdw: var(--fallback-er,oklch(var(--er)/1));
+  }

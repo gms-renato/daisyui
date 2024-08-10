@@ -1,0 +1,53 @@
+.divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 1rem;
+    white-space: nowrap
+}
+  .divider:before,
+  .divider:after {
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1))
+}
+  .divider:not(:empty) {
+    gap: 1rem
+}
+  .divider-neutral:before,
+  .divider-neutral:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)))
+}
+  .divider-primary:before,
+  .divider-primary:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)))
+}
+  .divider-secondary:before,
+  .divider-secondary:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)))
+}
+  .divider-accent:before,
+  .divider-accent:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)))
+}
+  .divider-success:before,
+  .divider-success:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)))
+}
+  .divider-warning:before,
+  .divider-warning:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity)))
+}
+  .divider-info:before,
+  .divider-info:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity)))
+}
+  .divider-error:before,
+  .divider-error:after {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity)))
+}

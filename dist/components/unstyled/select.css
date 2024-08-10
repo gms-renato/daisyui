@@ -1,0 +1,23 @@
+.select {
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    height: 3rem;
+    min-height: 3rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 2
+}
+
+  /* disabled */
+  /* &-disabled,
+  &[disabled] {
+    @apply pointer-events-none;
+  } */
+  /* multiple */
+  .select[multiple] {
+    height: auto
+}

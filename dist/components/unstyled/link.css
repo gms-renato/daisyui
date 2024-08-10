@@ -1,0 +1,12 @@
+.link {
+    cursor: pointer;
+    text-decoration-line: underline
+}
+  .link-hover {
+    text-decoration-line: none
+}
+  @media(hover:hover) {
+    .link-hover:hover {
+        text-decoration-line: underline
+    }
+}

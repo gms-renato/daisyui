@@ -1,0 +1,175 @@
+.file-input {
+    overflow: hidden;
+    border-radius: var(--rounded-btn, 0.5rem);
+    border-width: 1px;
+    border-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-border-opacity)));
+    --tw-border-opacity: 0;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+  .file-input::file-selector-button {
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+    font-weight: 600;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
+    text-decoration-line: none;
+    border-width: var(--border-btn, 1px);
+    animation: button-pop var(--animation-btn, 0.25s) ease-out;
+  }
+  .file-input-bordered {
+    --tw-border-opacity: 0.2;
+}
+  .file-input:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 2px;
+    outline-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+  .file-input-ghost {
+    --tw-bg-opacity: 0.05;
+}
+  .file-input-ghost:focus {
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+      box-shadow: none;
+}
+  .file-input-ghost::file-selector-button {
+    border-width: 1px;
+    border-color: transparent;
+    background-color: transparent;
+    color: currentColor;
+}
+  .file-input-primary {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
+}
+  .file-input-primary:focus {
+    outline-color: var(--fallback-p,oklch(var(--p)/1));
+}
+  .file-input-primary::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+}
+  .file-input-secondary {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity)));
+}
+  .file-input-secondary:focus {
+    outline-color: var(--fallback-s,oklch(var(--s)/1));
+}
+  .file-input-secondary::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-s,oklch(var(--s)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
+}
+  .file-input-accent {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity)));
+}
+  .file-input-accent:focus {
+    outline-color: var(--fallback-a,oklch(var(--a)/1));
+}
+  .file-input-accent::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-a,oklch(var(--a)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
+}
+  .file-input-info {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity)));
+}
+  .file-input-info:focus {
+    outline-color: var(--fallback-in,oklch(var(--in)/1));
+}
+  .file-input-info::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-in,oklch(var(--in)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-in,oklch(var(--in)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-inc,oklch(var(--inc)/var(--tw-text-opacity)));
+}
+  .file-input-success {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity)));
+}
+  .file-input-success:focus {
+    outline-color: var(--fallback-su,oklch(var(--su)/1));
+}
+  .file-input-success::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-su,oklch(var(--su)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-suc,oklch(var(--suc)/var(--tw-text-opacity)));
+}
+  .file-input-warning {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity)));
+}
+  .file-input-warning:focus {
+    outline-color: var(--fallback-wa,oklch(var(--wa)/1));
+}
+  .file-input-warning::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-wa,oklch(var(--wa)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-wac,oklch(var(--wac)/var(--tw-text-opacity)));
+}
+  .file-input-error {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity)));
+}
+  .file-input-error:focus {
+    outline-color: var(--fallback-er,oklch(var(--er)/1));
+}
+  .file-input-error::file-selector-button {
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-er,oklch(var(--er)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 1;
+    color: var(--fallback-erc,oklch(var(--erc)/var(--tw-text-opacity)));
+}
+  .file-input-disabled,
+  .file-input[disabled] {
+    cursor: not-allowed;
+    --tw-border-opacity: 1;
+    border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+    --tw-text-opacity: 0.2;
+}
+  .file-input-disabled::placeholder,
+  .file-input[disabled]::placeholder {
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-placeholder-opacity)));
+    --tw-placeholder-opacity: 0.2;
+}
+  .file-input-disabled::file-selector-button, .file-input[disabled]::file-selector-button {
+    --tw-border-opacity: 0;
+    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+    --tw-bg-opacity: 0.2;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+    --tw-text-opacity: 0.2;
+}

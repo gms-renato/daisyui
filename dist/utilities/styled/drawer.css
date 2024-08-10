@@ -1,0 +1,4 @@
+.drawer-open > .drawer-toggle ~ .drawer-side > .drawer-overlay {
+    cursor: default;
+    background-color: transparent
+}
