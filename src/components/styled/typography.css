@@ -1,42 +1,78 @@
 :root .prose {
-  --tw-prose-body: theme(colors.base-content/0.8);
-  --tw-prose-headings: theme(colors.base-content);
-  --tw-prose-lead: theme(colors.base-content);
-  --tw-prose-links: theme(colors.base-content);
-  --tw-prose-bold: theme(colors.base-content);
-  --tw-prose-counters: theme(colors.base-content);
-  --tw-prose-bullets: theme(colors.base-content/0.5);
-  --tw-prose-hr: theme(colors.base-content/0.2);
-  --tw-prose-quotes: theme(colors.base-content);
-  --tw-prose-quote-borders: theme(colors.base-content/0.2);
-  --tw-prose-captions: theme(colors.base-content/0.5);
-  --tw-prose-code: theme(colors.base-content);
-  --tw-prose-pre-code: theme(colors.neutral-content);
-  --tw-prose-pre-bg: theme(colors.neutral);
-  --tw-prose-th-borders: theme(colors.base-content/0.5);
-  --tw-prose-td-borders: theme(colors.base-content/0.2);
+    --tw-prose-body: theme(colors.base-content/0.8);
+    --tw-prose-headings: theme(colors.base-content);
+    --tw-prose-lead: theme(colors.base-content);
+    --tw-prose-links: theme(colors.base-content);
+    --tw-prose-bold: theme(colors.base-content);
+    --tw-prose-counters: theme(colors.base-content);
+    --tw-prose-bullets: theme(colors.base-content/0.5);
+    --tw-prose-hr: theme(colors.base-content/0.2);
+    --tw-prose-quotes: theme(colors.base-content);
+    --tw-prose-quote-borders: theme(colors.base-content/0.2);
+    --tw-prose-captions: theme(colors.base-content/0.5);
+    --tw-prose-code: theme(colors.base-content);
+    --tw-prose-pre-code: theme(colors.neutral-content);
+    --tw-prose-pre-bg: theme(colors.neutral);
+    --tw-prose-th-borders: theme(colors.base-content/0.5);
+    --tw-prose-td-borders: theme(colors.base-content/0.2);
 }
 .prose {
-  & :where(code):not(:where([class~="not-prose"] *, pre *)) {
-    padding: 1px 8px;
-    border-radius: var(--rounded-badge);
-    font-weight: initial;
-    background-color: theme(colors.base-content/0.1);
-    @supports not (color: oklch(0% 0 0)) {
-      background-color: theme(colors.base-300);
+    & :where(code):not(:where([class~="not-prose"] *, pre *)) {
+        padding: 1px 8px;
+        border-radius: var(--rounded-badge);
+        font-weight: initial;
+        background-color: theme(colors.base-content/0.1);
+        @supports not (color: oklch(0% 0 0)) {
+            background-color: theme(colors.base-300);
+        }
     }
-  }
-  & :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before,
-  & :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
-    display: none;
-  }
-  pre {
-    code {
-      border-radius: 0;
-      padding: 0;
+    &
+        :where(code):not(
+            :where([class~="not-prose"], [class~="not-prose"] *)
+        )::before,
+    &
+        :where(code):not(
+            :where([class~="not-prose"], [class~="not-prose"] *)
+        )::after {
+        display: none;
     }
-  }
-  & :where(tbody tr, thead):not(:where([class~="not-prose"] *)) {
-    border-bottom-color: theme(colors.base-content/0.2);
-  }
+    pre {
+        code {
+            border-radius: 0;
+            padding: 0;
+        }
+    }
+    & :where(tbody tr, thead):not(:where([class~="not-prose"] *)) {
+        border-bottom-color: theme(colors.base-content/0.2);
+    }
+}
+
+:root h1 {
+    font-size: 3rem; /* Contoh ukuran untuk h1 */
+    line-height: 3rem;
+}
+
+:root h2 {
+    font-size: 2.625rem; /* Contoh ukuran untuk h2 */
+    line-height: 2.625rem;
+}
+
+:root h3 {
+    font-size: 2.375rem; /* Contoh ukuran untuk h3 */
+    line-height: 2.375rem;
+}
+
+:root h4 {
+    font-size: 2rem; /* Contoh ukuran untuk h4 */
+    line-height: 2rem;
+}
+
+:root h5 {
+    font-size: 1.75rem; /* Contoh ukuran untuk h5 */
+    line-height: 1.75rem;
+}
+
+:root h6 {
+    font-size: 1.5rem; /* Contoh ukuran untuk h6 */
+    line-height: 1.5rem;
 }
